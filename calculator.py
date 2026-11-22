@@ -1,12 +1,13 @@
+#https://github.com/A-caywood/lab11-ac-ld
+#Partner 1: Andrew Caywood
+#Partner 2: Liam Dombrowski
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-#https://github.com/A-caywood/lab11-ac-ld
-#Partner 1: Andrew Caywood
-#Partner 2: Liam Dombrowski
+
 
 import math
 
@@ -22,15 +23,15 @@ def add(a, b):
     return a + b
 
 def subtract(a, b):
-    return a -b
-
-def multiply(a, b):
-    return a * b
+    return a - b
 
 def divide(a, b):
     if a == 0:
         raise ZeroDivisionError("Cannot divide by zero.")
     return b / a
+
+def multiply(a, b):
+    return a * b
 
 def logarithm(a, b):
     if a <= 0 or b <= 0:
@@ -38,4 +39,26 @@ def logarithm(a, b):
     return math.log(b, a)
 
 def exponent(a, b):
+    return a ** b
+
+# Partner 2 functions
+# add() function already included on Partner 1 side
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return b / a
+
+def log(a, b):
+    if a <= 0 or b <= 0:
+        raise ValueError("Invalid argument.")
+    return math.log(b, a)
+
+def exp(a, b):
     return a ** b
