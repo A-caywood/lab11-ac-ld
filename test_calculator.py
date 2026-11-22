@@ -39,11 +39,6 @@ class TestCalculator(unittest.TestCase):
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
-    
-    ######## Partner 1
-    def test_log_invalid_argument(self):
-        with self.assertRaises(ValueError):
-            logarithm(2, 0)
 
    ######## Partner 1
    def test_log_invalid_argument(self):
@@ -51,16 +46,16 @@ class TestCalculator(unittest.TestCase):
             logarithm(2, 0)
 
    def test_hypotenuse(self):
-    self.assertEqual(hypotenuse(3, 4), 5.0)
-    self.assertEqual(hypotenuse(0, 0), 0.0)
-    self.assertEqual(hypotenuse(5, 12), 13.0)
+        self.assertEqual(hypotenuse(3, 4), 5.0)
+        self.assertEqual(hypotenuse(0, 0), 0.0)
+        self.assertEqual(hypotenuse(5, 12), 13.0)
 
 
    def test_sqrt(self):
-    with self.assertRaises(ValueError):
-        square_root(-9)
-    self.assertEqual(square_root(9), 3.0)
-    self.assertEqual(square_root(0), 0.0)
+        with self.assertRaises(ValueError):
+            square_root(-9)
+        self.assertEqual(square_root(9), 3.0)
+        self.assertEqual(square_root(0), 0.0)
     ##########################
 
 
