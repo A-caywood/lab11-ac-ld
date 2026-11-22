@@ -61,6 +61,26 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(2, 3), 5)
         self.assertEqual(add(-202,202), 0)
         self.assertEqual(add(-1000, -1000), -2000)
+   def test_subtract(self):
+        self.assertEqual(sub(2, 3), -1)
+        self.assertEqual(sub(100,100), 0)
+        self.assertEqual(sub(-200, -201), 1)
+   def test_divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(0,2)
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 999999)
+   def test_logarithm(self):
+        self.assertEqual(log(2, 9), math.log(9, 2))
+        self.assertEqual(log(10,1000), math.log(1000, 10))
+        self.assertEqual(log(10,1), 0)
+   def test_log_invalid_base(self):
+        with self.assertRaises(ValueError):
+            log(0, 10)
+        with self.assertRaises(ValueError):
+            log(10,0)
+        with self.assertRaises(ValueError):
+            log(0,0)
 
 
 # Do not touch this
