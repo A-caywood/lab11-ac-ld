@@ -39,14 +39,11 @@ class TestCalculator(unittest.TestCase):
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
-<<<<<<< HEAD
     
     ######## Partner 1
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
             logarithm(2, 0)
-=======
->>>>>>> 63a72346b1f6a1fdea5a7b04611dcc4635e0ad05
 
    ######## Partner 1
    def test_log_invalid_argument(self):
