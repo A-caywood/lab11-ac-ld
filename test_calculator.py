@@ -1,3 +1,6 @@
+#https://github.com/A-caywood/lab11-ac-ld
+#Partner 1: Andrew Caywood
+#Partner 2: Liam Dombrowski
 import unittest
 from calculator import *
 

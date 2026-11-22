@@ -1,12 +1,13 @@
+#https://github.com/A-caywood/lab11-ac-ld
+#Partner 1: Andrew Caywood
+#Partner 2: Liam Dombrowski
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-#https://github.com/A-caywood/lab11-ac-ld
-#Partner 1: Andrew Caywood
-#Partner 2: Liam Dombrowski
+
 
 import math
 
