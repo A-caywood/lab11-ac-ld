@@ -22,7 +22,7 @@ def add(a, b):
     return a + b
 
 def subtract(a, b):
-    return a -b
+    return a - b
 
 def multiply(a, b):
     return a * b
@@ -44,7 +44,7 @@ def exponent(a, b):
 # add() function already included on Partner 1 side
 
 def sub(a, b):
-    return a -b
+    return a - b
 
 def mul(a, b):
     return a * b
