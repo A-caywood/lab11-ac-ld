@@ -54,6 +54,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(0), 0.0)
     ##########################
 
+
+    #Partner 2
+    def test_add(self):
+        self.AssertEqual(add(2, 3), 5)
+        self.AssertEqual(add(-202,202), 0)
+        self.AssertEqual(add(-1000, -1000), -2000)
+
 # Do not touch this
 if __name__ == "__main__":
     unittest.main()
