@@ -39,3 +39,25 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
+
+# Partner 2 functions
+# add() function already included on Partner 1 side
+
+def sub(a, b):
+    return a -b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return b / a
+
+def log(a, b):
+    if a <= 0 or b <= 0:
+        raise ValueError("Invalid argument.")
+    return math.log(b, a)
+
+def exp(a, b):
+    return a ** b
